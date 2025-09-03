@@ -7,7 +7,7 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "seed": "node ./seeders/adminSeed.js",
-    "build": "npm install",
+    "build": "npm install; npm run build",
   },
   "keywords": [],
   "author": "",
