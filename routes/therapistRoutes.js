@@ -10,7 +10,7 @@ import {
   updateTherapistAvailability,
   batchUpdateTherapists,
   getTherapistSpecializations,
-} from '../controllers/TherapistController.js';
+} from '../controllers/therapistController.js';
 import { protect, authorize } from '../middleware/authMiddleware.js';
 import { cacheMiddleware } from '../middleware/cacheMiddleware.js';
 
