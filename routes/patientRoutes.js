@@ -12,7 +12,7 @@ import {
   batchUpdatePatients,
   searchPatients,
   getPatientAnalytics,
-} from '../controllers/PatientController.js';
+} from '../controllers/patientController.js';
 import { protect, authorize } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
