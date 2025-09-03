@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
+    "build": "npm install",
     "start": "node server.js",
     "seed": "node ./seeders/adminSeed.js",
-    "build": "npm install; npm run build",
   },
   "keywords": [],
   "author": "",
