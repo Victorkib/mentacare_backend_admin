@@ -19,14 +19,14 @@ const loginAdmin = asyncHandler(async (req, res) => {
     res.cookie('jwt', token, {
       httpOnly: true,
       secure: process.env.NODE_ENV !== 'development', // Use secure cookies in production
-      sameSite: 'strict', // Prevent CSRF attacks
+      sameSite: 'none', // Prevent CSRF attacks
       maxAge: 1000 * 60 * 60, // 1 hour
     });
 
     res.cookie('refreshToken', refreshToken, {
       httpOnly: true,
       secure: process.env.NODE_ENV !== 'development',
-      sameSite: 'strict',
+      sameSite: 'none',
       maxAge: 1000 * 60 * 60 * 24 * 7, // 7 days
     });
 
